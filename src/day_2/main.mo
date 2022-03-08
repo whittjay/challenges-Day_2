@@ -21,7 +21,15 @@ actor {
 // Write a function decimal_to_bits that takes a Nat n and returns a Text corresponding to the binary representation of this number. 
 // Note : decimal_to_bits(255) -> "11111111".
 
-     public func decimal_to_bits(n : Float) : async Text {
-         return(Float.toText);
-     };
+ //    public func decimal_to_bits(n : Float) : async Text {
+ //        return(Float.toText);
+ //    };
+
+
+// CHALLENGE FOUR
+// Write a function capitalize_character that takes a Char c and returns the capitalized version of it.
+
+    public func capitalize_character(c : Char) : async Bool {
+        return(Char.isUppercase(c));
+    };
 };
