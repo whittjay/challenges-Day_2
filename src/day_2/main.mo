@@ -6,9 +6,13 @@
 import Nat8 "mo:base/Nat8";
 
 actor {
-    public func nat_to_nat8(n : Nat) : async Nat {
-      let fromNat : Nat -> Nat8;
-      return(Nat8.fromNat(n));
-    };
+  //  public func nat_to_nat8(n : Nat) : async Nat {
+  //    return(Nat8.fromNat(n));
+  //  };
 
+// Write a function max_number_with_n_bits that takes a Nat n and returns the maximum number than can be represented with only n-bits.
+
+    public func max_number_with_n_bits(n : Nat) : async Nat {
+        return((2 ** n) - 1);
+    };
 };
